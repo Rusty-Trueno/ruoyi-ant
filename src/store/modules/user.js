@@ -63,7 +63,7 @@ const user = {
           console.log(24)
           const result = response.result
           console.log(response)
-          Vue.ls.set(ACCESS_TOKEN, result.access_token)
+          Vue.ls.set(ACCESS_TOKEN, result.access_token, 2 * 60 * 60 * 1000)
           Vue.ls.set(LOGIN_NAME, result.loginName)
           Vue.ls.set(REFRESH_TOKEN, result.refresh_token)
           Vue.ls.set(DEVICE_ID, userInfo.deviceId)

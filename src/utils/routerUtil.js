@@ -192,7 +192,7 @@ export function buildtree (list, arr, parentId) {
           menuCode: item.menuCode,
           hidden: false,
           path: item.path && item.path.length > 0 ? item.path : undefined,
-          component: 'RouteView',
+          component: 'tableList',
           redirect: item.redirect,
           target: item.target,
           hideChildrenInMenu: item.hiddenChildren,
