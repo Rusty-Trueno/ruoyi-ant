@@ -225,6 +225,18 @@ export const defaultRouterMap = [
         'key': 'gnqc'
       }
     ]
+  },
+  {
+    'title': '单元测试',
+    'key': 'imc',
+    'component': 'PageView',
+    'icon': 'interaction',
+    'children': [
+      {
+        'title': '测试内容',
+        'key': 'imcTask'
+      }
+    ]
   }
 ]
 

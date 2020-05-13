@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { login, getInfo, logout } from '@/api/login'
-import { ACCESS_TOKEN, LOGIN_NAME, REFRESH_TOKEN, DEVICE_ID } from '@/store/mutation-types'
+import { ACCESS_TOKEN, LOGIN_NAME, REFRESH_TOKEN, DEVICE_ID, USER_ID } from '@/store/mutation-types'
 import { welcome } from '@/utils/util'
 
 const user = {
@@ -80,6 +80,9 @@ const user = {
       return new Promise((resolve, reject) => {
         getInfo(loginInfo).then(response => {
           const result = response.result
+          console.log(result)
+          Vue.ls.set(USER_ID, result.id)
+          commit('SET_USERID', result.id)
           if (result.roles) {
             commit('SET_ROLES', result.roles)
             commit('SET_BUTTONS', result.buttons)

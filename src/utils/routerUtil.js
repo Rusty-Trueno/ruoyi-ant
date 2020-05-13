@@ -44,7 +44,10 @@ const constantRouterComponents = {
   notification: () => import('@/views/account/settings/Notification'),
   donateList: () => import('@/views/others/DonateList'),
   mifei: () => import('@/views/others/MiFei'),
-  gnqc: () => import('@/views/others/Gnqc')
+  gnqc: () => import('@/views/others/Gnqc'),
+  // imc
+  imcTask: () => import('@/views/imc/ImcTask')
+
   // system
   // userList: () => import('@/views/system/UserList'),
   // roleList: () => import('@/views/system/RoleList'),
@@ -53,7 +56,7 @@ const constantRouterComponents = {
   // dictList: () => import('@/views/system/DictList'),
   // distList: () => import('@/views/system/DistList'),
   // configList: () => import('@/views/system/ConfigList'),
-  // ossList: () => import('@/views/system/OssList'),
+  // ossList: () => import('@/views/system/OssList')
   // monitor
   // operLogList: () => import('@/views/monitor/OperLogList'),
   // loginLogList: () => import('@/views/monitor/LoginLogList'),

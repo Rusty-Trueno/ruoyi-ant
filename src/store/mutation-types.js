@@ -1,6 +1,7 @@
 export const ACCESS_TOKEN = 'Access-Token'
 export const LOGIN_NAME = 'Login-Name'
 export const DEVICE_ID = 'Device_Id'
+export const USER_ID = 'User_Id'
 export const REFRESH_TOKEN = 'Refresh-Token'
 export const SIDEBAR_TYPE = 'SIDEBAR_TYPE'
 export const DEFAULT_THEME = 'DEFAULT_THEME'
